@@ -1,11 +1,10 @@
-import React from 'react';
 import Chart from 'react-apexcharts';  
 
 interface VisitorsTimeSeriesChartProps {
     data: any[]; 
 }
 
-const VisitorsTimeSeriesChart: React.FC<VisitorsTimeSeriesChartProps> = ({ data }) => {
+function VisitorsTimeSeriesChart({ data }: VisitorsTimeSeriesChartProps) {
     
     const chartData = data.map(item => ({
         date: new Date(`${item.arrival_date_year}-${item.arrival_date_month}-${item.arrival_date_day_of_month}`).toISOString(),

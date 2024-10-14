@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { ApexOptions } from 'apexcharts';
 
@@ -7,7 +6,7 @@ interface VisitorsByCountryChartProps {
   data: number[];
 }
 
-const VisitorsByCountryChart: React.FC<VisitorsByCountryChartProps> = ({ title, data }) => {
+function VisitorsByCountryChart({ title, data }: VisitorsByCountryChartProps)  {
     
   const options: ApexOptions = {
     chart: {

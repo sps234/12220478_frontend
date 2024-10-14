@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { ApexOptions } from 'apexcharts';
 
@@ -8,7 +7,7 @@ interface TotalVisitorsSparklineProps {
   data: number[];
 }
 
-const TotalVisitorsSparkline: React.FC<TotalVisitorsSparklineProps> = ({ title, subtitle, data }) => {
+function TotalVisitorsSparkline({ title, subtitle, data }: TotalVisitorsSparklineProps ) {
   const options: ApexOptions = {
     chart: {
       type: 'line', 

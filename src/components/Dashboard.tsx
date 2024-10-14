@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import DatePicker  from 'react-datepicker'; 
 import 'react-datepicker/dist/react-datepicker.css';
 import hotelData from '../utils/data';
 import DailyVisitorsChart from './DailyVisitorsChart';
 import VisitorsByCountryChart from './VisitorsByCountryChart';
 import TotalVisitorsSparkline from './TotalVisitorsSparkline';
+import '../App.css';
 
 
-
-const Dashboard: React.FC = () => {
+function Dashboard() { 
 
     const [data, setData] = useState<any[]>([]);
     const [filteredData, setFilteredData] = useState<any[]>([]); 
