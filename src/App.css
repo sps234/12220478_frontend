@@ -1,8 +1,17 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+#root {  
   text-align: center;
 }
 
 
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);    
+  gap: 20px; 
+}
+
+.charts > div {
+  border: 1px solid #ccc; 
+  padding: 10px;         
+  background-color: #f9f9f9; 
+}
