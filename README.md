@@ -36,16 +36,20 @@ This project is a front-end application developed for the Waterdip AI assignment
    cd waterdip-ai-assignment
 
 2. Install dependencies:
-    ```npm install
+    ```bash
+    npm install
 
 3. Start the development server:
-    ```npm run dev
+    ```bash
+    npm run dev
   
 4. Open your browser and navigate to http://localhost:3000 to view the application.
 
 5. (Optional) If you want to build the project for production, run:
-    ```npm run build
+    ```bash
+    npm run build
   
 6. After building, you can serve the static files using a server like serve:
-    ```npm install -g serve
-    ```serve -s build
+    ```bash
+    npm install -g serve
+    serve -s build
