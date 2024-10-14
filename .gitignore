@@ -26,8 +26,8 @@ dist-ssr
 
 
 #files
-/src/components
-/src/utils
+# /src/components
+# /src/utils
 /public/hotel_bookings_1000.csv
 
 
