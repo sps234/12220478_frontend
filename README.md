@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
+# Waterdip AI Front End Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a front-end application developed for the Waterdip AI assignment, utilizing TypeScript to enhance type safety and improve code quality. The application leverages modern web technologies to create a responsive and user-friendly interface. The main goal of the project is to showcase the ability to integrate various data visualization techniques and implement user interaction features effectively.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Design**: The application is designed to be responsive across different devices, ensuring a seamless user experience.
+- **Data Visualization**: Integrates various charts and graphs to represent data effectively using libraries like React-ApexCharts.
+- **User Interaction**: Provides an interactive interface for users to input and manipulate data, enhancing the user experience.
+- **Clean UI/UX**: Focuses on a clean and modern user interface with intuitive navigation.
+- **Type Safety**: Utilizes TypeScript to ensure type safety throughout the application.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static types for improved code quality.
+- **React-ApexCharts**: A wrapper for ApexCharts in React to create dynamic charts and graphs.
+- **Vite**: A fast and lightweight development server for React applications.
+- **CSS**: For styling and responsive design.
+- **JavaScript**: For interactive features and data handling.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Node.js (version >= 14)
+- npm or yarn
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/waterdip-ai-assignment.git
+   cd waterdip-ai-assignment
+
+2. Install dependencies:
+    npm install
+
+3. Start the development server:
+    npm run dev
+  
+4. Open your browser and navigate to http://localhost:3000 to view the application.
+
+5. (Optional) If you want to build the project for production, run:
+    npm run build
+  
+6. After building, you can serve the static files using a server like serve:
+    npm install -g serve
+    serve -s build
